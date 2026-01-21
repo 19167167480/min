@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>迷你世界二改下载站</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -accel-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('./2.png') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        /* 容器卡片样式 - 透明毛玻璃效果 */
+        .download-card {
+            background: rgba(255, 255, 255, 0.75); /* 白色半透明背景 */
+            backdrop-filter: blur(20px); /* 更强的模糊效果 */
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 480px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* 添加白色边框增强毛玻璃效果 */
+        }
+
+        /* APP图标 */
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            background-image: url('https://via.placeholder.com/200x200/4CAF50/ffffff?text=APP+ICON');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 应用名称 */
+        .app-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        /* 版本信息或简短描述 */
+        .app-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        /* APP截图展示 */
+        .app-screenshot {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* 线路标签 */
+        .line-label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        /* 下载按钮 */
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            background: rgba(0, 91, 234, 0.8); /* 半透明蓝色按钮 */
+            backdrop-filter: blur(10px); /* 按钮也添加毛玻璃效果 */
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 5px 15px rgba(0, 91, 234, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 15px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 91, 234, 0.4);
+            background: rgba(0, 91, 234, 0.9);
+        }
+
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* 底部提示 */
+        .footer-note {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* 简单的淡入动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="download-card">
+        <!-- 应用图标 -->
+        <div class="app-icon"></div>
+        
+        <!-- 应用名称 -->
+        <h1 class="app-name">迷你世界老版本</h1>
+        
+        <!-- 简短信息 -->
+        <p class="app-info">版本 0.47.5</p>
+
+        <!-- APP截图 -->
+        <img src="./1.png" alt="应用截图" class="app-screenshot">
+        
+        <span class="line-label">线路一</span>
+        <!-- 下载按钮 -->
+        <a href="https://v6.gh-proxy.org/https://github.com/19167167480/min/releases/download/min/min.apk" class="download-btn">国内加速下载</a>
+        
+        <span class="line-label">线路二</span>
+        <a href="https://github.com/19167167480/min/releases/download/min/min.apk" class="download-btn">国际普通下载</a>
+
+        <!-- 底部提示 -->
+        <p class="app-info">官方凭啥不让我们玩老版本,玩老版本有错吗,</p>
+    </div>
+
+</body>
+</html>
